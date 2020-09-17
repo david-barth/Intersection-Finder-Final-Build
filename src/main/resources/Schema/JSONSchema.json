@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Rectangle Set Schema",
+    "description": "The set of rectangles described here",
+    "type": "object",
+    "properties": {
+        "rects": {
+            "description": "The set of rectangles",
+            "type": "array", 
+            "items": {
+              "x": {
+                "type": "integer"
+              },
+              "y": {
+                "type": "integer"
+              }, 
+              "delta_x": {
+                "type": "integer"
+              }, 
+              "delta_y": {
+                "type": "integer"
+              }
+            }
+        }
+    },
+    "required": ["rects"], 
+    "additionalProperties": false
+}
